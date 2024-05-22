@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".. /stylesheets/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black p-[8vw]">
+    <form action="/update/<%=useredit._id%>" method="post" class="text-white flex flex-col gap-5">
+        <h1 class="text-2xl mb-2 tracking-tighter">Update User</h1>
+        <input class="py-2 px-5 border-2 bg-transparent text-xl border-zinc-800 rounded" type="text" placeholder="name" name="name" value="<%=useredit.name%>">
+        <input class="py-2 px-5 border-2 bg-transparent text-xl border-zinc-800 rounded" type="text" placeholder="email" name="email" value="<%=useredit.email%>" >
+        <input class="py-2 px-5 border-2 bg-transparent text-xl border-zinc-800 rounded" type="text" placeholder="imageurl" name="imageurl" value="<%=useredit.imageurl%>">
+        <button class="py-2 px-5 rounded-lg bg-yellow-500">Update User</button>
+        
+    </form>
+    
+    <a class="text-blue-500 text-2xl capitalize mt-5 mr-5 float-right block" href="/read">read users</a>
+    
+</body>
+</html>
